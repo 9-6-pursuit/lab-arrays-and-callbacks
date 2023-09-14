@@ -71,6 +71,9 @@ console.log(firstWordIndexLessThan2Char());
 
 const logValuesTimes3 = () => {
   //
+  nums.forEach((num) => {
+    console.log(num * 3);
+  });
 };
 
 const logWordsWithExclamation = () => {
