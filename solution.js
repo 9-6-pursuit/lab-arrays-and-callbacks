@@ -1,11 +1,13 @@
 const { nums, words } = require("./data/data.js");
 
-// Every
+// Every -----------------------------------
 const isEveryNumGreaterThan2 = (numbers) => {
   return numbers.every((num) => num > 2);
 };
 
 console.log(isEveryNumGreaterThan2(nums));
+
+// -----------------------------------
 
 const isEveryWordShorterThan7 = () => {
   //
@@ -14,7 +16,7 @@ const isEveryWordShorterThan7 = () => {
 
 console.log(isEveryWordShorterThan7(words));
 
-// Filter
+// Filter -----------------------------------
 
 const arrayLessThan5 = (numbers) => {
   // 
@@ -24,6 +26,8 @@ const arrayLessThan5 = (numbers) => {
 const newArry = arrayLessThan5(nums);
 console.log(newArry);
 
+// -----------------------------------
+
 const arrayOddLengthWords = (words) => {
   return words.filter((word) => word.length % 2 !== 0);
 };
@@ -31,7 +35,7 @@ const oddLengthWords = arrayOddLengthWords(words);
 
 console.log(oddLengthWords);
 
-// Find
+// Find -----------------------------------
 
 const firstValDivisibleBy4 = (num) => {
   //
@@ -40,9 +44,13 @@ const firstValDivisibleBy4 = (num) => {
 
 console.log(firstValDivisibleBy4())
 
+// -----------------------------------
+
 const firstWordLongerThan4Char = () => {
-  //
+  return words.find((word) => word.length > 4);
 };
+
+console.log(firstWordLongerThan4Char());
 
 // Find Index
 
