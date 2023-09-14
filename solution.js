@@ -92,9 +92,12 @@ const arrayValuesSquaredTimesIndex = () => {
 
 console.log(arrayValuesSquaredTimesIndex());
 
-const arrayWordsUpcased = () => {
+const arrayWordsUpcased = (words) => {
   //
+  return words.map((word) => word.toUpperCase());
 };
+
+console.log(arrayWordsUpcased)
 
 // Some
 
