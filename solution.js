@@ -16,9 +16,13 @@ console.log(isEveryWordShorterThan7(words));
 
 // Filter
 
-const arrayLessThan5 = () => {
-  //
+const arrayLessThan5 = (numbers) => {
+  // 
+  return numbers.filter((num) => num < 5);
 };
+
+const newArry = arrayLessThan5(nums);
+console.log(newArry);
 
 const arrayOddLengthWords = () => {
   //
