@@ -46,17 +46,20 @@ console.log(firstValDivisibleBy4())
 
 // -----------------------------------
 
-const firstWordLongerThan4Char = () => {
+const firstWordLongerThan4Char = (words) => {
   return words.find((word) => word.length > 4);
 };
 
-console.log(firstWordLongerThan4Char());
+console.log(firstWordLongerThan4Char(words));
 
 // Find Index
 
 const firstNumIndexDivisibleBy3 = () => {
-  //
+  return nums.findIndex((num) => num % 3 === 0);
 };
+
+console.log(firstNumIndexDivisibleBy3()); 
+
 
 const firstWordIndexLessThan2Char = () => {
   //
