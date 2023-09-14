@@ -103,7 +103,9 @@ console.log(arrayWordsUpcased)
 
 const areSomeNumsDivisibleBy7 = () => {
   //
+  return nums.some((num) => num % 7 === 0)
 };
+console.log(areSomeNumsDivisibleBy7())
 
 const doSomeWordsHaveAnA = () => {
   //
