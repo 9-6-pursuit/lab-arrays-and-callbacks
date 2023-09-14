@@ -33,9 +33,12 @@ console.log(oddLengthWords);
 
 // Find
 
-const firstValDivisibleBy4 = () => {
+const firstValDivisibleBy4 = (num) => {
   //
+  return nums.find((num) => num % 4 === 0);
 };
+
+console.log(firstValDivisibleBy4())
 
 const firstWordLongerThan4Char = () => {
   //
