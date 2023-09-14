@@ -9,7 +9,10 @@ console.log(isEveryNumGreaterThan2(nums));
 
 const isEveryWordShorterThan7 = () => {
   //
+  return words.every((word) => word.length < 7);
 };
+
+console.log(isEveryWordShorterThan7(words));
 
 // Filter
 
