@@ -108,8 +108,10 @@ const areSomeNumsDivisibleBy7 = () => {
 console.log(areSomeNumsDivisibleBy7())
 
 const doSomeWordsHaveAnA = () => {
-  //
+  return words.some((word) => word.includes("a") || word.includes("A"));
 };
+
+console.log(doSomeWordsHaveAnA());
 
 module.exports = {
   isEveryNumGreaterThan2,
