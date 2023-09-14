@@ -62,8 +62,10 @@ console.log(firstNumIndexDivisibleBy3());
 
 
 const firstWordIndexLessThan2Char = () => {
-  //
+  return words.findIndex((word) => word.length < 2);
 };
+
+console.log(firstWordIndexLessThan2Char()); 
 
 // For Each
 
