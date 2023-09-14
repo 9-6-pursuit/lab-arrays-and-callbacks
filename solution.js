@@ -24,9 +24,12 @@ const arrayLessThan5 = (numbers) => {
 const newArry = arrayLessThan5(nums);
 console.log(newArry);
 
-const arrayOddLengthWords = () => {
-  //
+const arrayOddLengthWords = (words) => {
+  return words.filter((word) => word.length % 2 !== 0);
 };
+const oddLengthWords = arrayOddLengthWords(words);
+
+console.log(oddLengthWords);
 
 // Find
 
