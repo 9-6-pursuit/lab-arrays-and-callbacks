@@ -87,7 +87,10 @@ const logWordsWithExclamation = () => {
 
 const arrayValuesSquaredTimesIndex = () => {
   //
+   return nums.map((num, index) => num * num * index);
 };
+
+console.log(arrayValuesSquaredTimesIndex());
 
 const arrayWordsUpcased = () => {
   //
