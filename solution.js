@@ -112,6 +112,8 @@ const doSomeWordsHaveAnA = (word) => {
   })
 };
 
+
+
 module.exports = {
   isEveryNumGreaterThan2,
   isEveryWordShorterThan7,
