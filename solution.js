@@ -30,33 +30,30 @@ const firstWordLongerThan4Char = (array) => {
 };
 
 // Find Index
-
 const firstNumIndexDivisibleBy3 = (array) => {
-  //
+  return array.findIndex((number) => number % 3 ===0)
 };
 
-const firstWordIndexLessThan2Char = () => {
-  //
+const firstWordIndexLessThan2Char = (array) => {
+  return array.findIndex((word) => word.length <2)
 };
 
 // For Each
-
-const logValuesTimes3 = () => {
-  //
+const logValuesTimes3 = (array) => {
+  return array.forEach((number) => number*3)
 };
 
-const logWordsWithExclamation = () => {
-  //
+const logWordsWithExclamation = (words) => {
+  return words.forEach((word) => word + "!")
 };
 
 // Map
-
-const arrayValuesSquaredTimesIndex = () => {
-  //
+const arrayValuesSquaredTimesIndex = (array) => {
+  return array.map((number) => number * number * (array.indexOf(number)))
 };
 
-const arrayWordsUpcased = () => {
-  //
+const arrayWordsUpcased = (array) => {
+  return array.map((word) => word.toUpperCase())
 };
 
 // Some
