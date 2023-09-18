@@ -32,14 +32,11 @@ const firstWordLongerThan4Char = (words) => {
 // Find Index
 
 const firstNumIndexDivisibleBy3 = (nums) => {
-  // return nums.find(num => nums.indexOf(num) % 3 === 0 ? num : -1)
-  return nums.some((num,index) => {
-    return num % 3 === 1 
-  })
+  return nums.findIndex((num) => num % 3 === 0 )
 };
 
 const firstWordIndexLessThan2Char = (words) => {
-  return words.find(word => words.indexOf(word) < 2)
+  return words.findIndex(word => word.length < 2)
 };
 
 // For Each
