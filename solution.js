@@ -58,12 +58,12 @@ const arrayWordsUpcased = (array) => {
 
 // Some
 
-const areSomeNumsDivisibleBy7 = () => {
-  //
+const areSomeNumsDivisibleBy7 = (array) => {
+  return array.some((number) => number % 7 === 0)
 };
 
-const doSomeWordsHaveAnA = () => {
-  //
+const doSomeWordsHaveAnA = (array) => {
+  return array.some ((word) => word.includes("a"))
 };
 
 module.exports = {
